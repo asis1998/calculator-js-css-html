@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+  <div>
+
+  <p class="js-display1"></p>
+  <p class="js-display2"></p>
+
+  <p>
+<button class="js-button" onclick="
+  numberButton(1);
+  ">1</button>
+<button class="js-button"
+onclick="
+  numberButton(2);
+  ">2</button>
+<button class="js-button"
+onclick="
+  numberButton(3);
+  ">3</button>
+<button class="js-button"
+onclick="
+  numberButton('+');
+  ">+</button>
+  </p>
+  <p>
+<button class="js-button"
+onclick="
+  numberButton(4);
+  ">4</button>
+<button class="js-button"
+onclick="
+  numberButton(5);
+  ">5</button>
+<button class="js-button"
+onclick="
+  numberButton(6);
+  ">6</button>
+<button class="js-button"
+onclick="
+  numberButton('-');
+  ">-</button>
+  </p>
+  <p>
+<button class="js-button"
+onclick="
+  numberButton(7);
+  ">7</button>
+<button class="js-button"
+onclick="
+  numberButton(8);
+  ">8</button>
+<button class="js-button"
+onclick="
+  numberButton(9);
+  ">9</button>
+<button class="js-button"
+onclick="
+  numberButton('*');
+  ">*</button>
+  </p>
+  <p>
+<button class="js-button"
+onclick="
+  numberButton(0);
+  ">0</button>
+<button class="js-button"
+onclick="
+  numberButton('.');
+  ">.</button>
+<button class="js-button"
+onclick=" 
+
+numberValue=eval(numberValue);
+localStorage.setItem('numberValue',JSON.stringify(numberValue));
+isEqualTo();
+ 
+  ">=</button>
+<button class="js-button"
+onclick="
+  numberButton('/');
+  ">/</button>
+  </p>
+  <p><button class="js-button" onclick="
+  numberValue = '';
+  numberButton(numberValue);
+  isEqualTo(numberValue);
+  
+  ">Clear</button></p>
+  </div>
+  
+  <script src="calculator.js" >
+    
+
+  </script>
+
+  
+  
+</body>
+</html>
